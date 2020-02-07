@@ -1,0 +1,96 @@
+.quiz-opt-wrap{
+    font-size: 18px;
+}
+
+body {
+    background-color: aqua;
+}
+
+#quiz-form {
+    background-color: black;
+    color: yellow;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+}
+#heading-main{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 40px;
+    position: relative;
+}
+
+#sub-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: yellow;
+    width: 150px;
+    height: 45px;
+    border-radius: 50%;
+    font-family: 'Hanalei Fill', cursive;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#broom {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 20%;
+}
+
+#broom:hover {
+    
+    animation-name: rotation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+#featured{
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Hanalei Fill', cursive;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    animation-name: elope;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes elope{
+    0%{
+        font-size: 15px;
+        transform: translateX(0px);
+    }
+    50%{
+        font-size: 7.5px;
+        transform: translateX(200px);
+    }
+    100%{
+        font-size: 0px;
+        transform: translateX(350px);
+    }
+}
